@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Corrección Segundo Previo</title>
+    <style>
+        body {
+            background-color: #F0C4B9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            background-color: #BFA294;
+            padding: 10px;
+        }
+
+        h1 {
+            color: #FFFFFF;
+            font-family: Sans-Serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .option {
+            flex-basis: 20%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .option img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .option h2 {
+            color: #666666;
+        }
+
+        .option button {
+            background-color: #cccccc;
+            border: none;
+            color: #333333;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #F6DFC7;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .tilted-title {
+            transform: rotate(8deg);
+            transition: transform 0.5s;
+        }
+
+        .tilted-title:hover {
+            transform: rotate(8deg) scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Corrección Segundo Previo</h1>
+    </header>
+
+    <div class="container">
+        <div class="option">
+            <img src="img\numero1.jpg" width="380" height="260">
+        <!--   /* <img src="imagen1.jpg" alt="Imagen 1">*/––«          -->  
+            <h2>Primer punto</h2>
+            <a href="html/ejercicio1.html">
+            <button>Botón</button>
+        </a>
+        </div>
+
+        <div class="option">
+            <img src="img\numero2.jpg" width="380" height="260">
+            <h2>Segundo punto</h2>
+            <a href="html/ejercicio2.html">
+                <button>Botón</button>
+            </a>
+        </div>
+
+        <div class="option">
+            <img src="img\numero3.jpg" width="380" height="260">
+            <h2>Tercer punto</h2>
+            <a href="html/ejercicio3.html">
+                <button>Botón</button>
+            </a>
+        </div>
+
+        <div class="option">
+             <img src="img\numero4.jpg" width="380" height="260">
+            <h2>Cuarto punto</h2>
+            <a href="html/ejercicio4.html">
+                <button>Botón</button>
+            </a>
+        </div>
+
+      
+    </div>
+
+    <footer>
+        <p>jhoan tafur 1152146</p>
+    </footer>
+    <script>
+        var title = document.querySelector('h1');
+
+        if (title) {
+            title.addEventListener('mouseenter', function() {
+                this.classList.add('tilted-title');
+            });
+
+            title.addEventListener('mouseleave', function() {
+                this.classList.remove('tilted-title');
+            });
+        }
+    </script>
+</body>
+</html>
